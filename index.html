@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>LUANZ & KO SIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --green-dark: #0f3d2e;
+            --green-main: #1e6f4e;
+            --green-light: #e6f2ec;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Georgia", "Times New Roman", serif;
+        }
+
+        body {
+            background-color: var(--green-light);
+            color: var(--green-dark);
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h1, h2, h3 {
+            color: var(--green-dark);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(15,61,46,0.7), rgba(15,61,46,0.7)),
+                        url("https://plus.unsplash.com/premium_photo-1683120722521-bd209e072e75?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+                        center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: var(--white);
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* BLOCK STYLES */
+        .block {
+            background-color: var(--white);
+            margin-bottom: 40px;
+            border-left: 6px solid var(--green-main);
+            padding: 50px;
+        }
+
+        .services, .advantages, .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* CONTACT FULL */
+        .contact-full {
+            height: 100vh;
+            background-color: var(--green-main);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .contact-full h2,
+        .contact-full p {
+            color: var(--white);
+            max-width: 700px;
+        }
+
+        .contact-full .details {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        /* FORM */
+        .form-box {
+            max-width: 500px;
+            background-color: var(--white);
+            padding: 40px;
+            margin: 0 auto;
+            border: 1px solid var(--green-main);
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--green-main);
+            font-size: 16px;
+        }
+
+        .form-box button {
+            background-color: var(--green-main);
+            color: var(--white);
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--green-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div>
+        <h1>LUANZ & KO SIA</h1>
+        <p>
+            Stratēģisks partneris mārketingā, reklāmā un biznesa vadības konsultācijās.
+            Mēs palīdzam uzņēmumiem strukturēti augt, optimizēt procesus un pieņemt
+            pamatotus lēmumus konkurētspējīgā vidē.
+        </p>
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section>
+    <div class="block">
+        <h2>Par uzņēmumu un mūsu pieeju</h2>
+        <p>
+            LUANZ & KO SIA ir konsultāciju uzņēmums, kas fokusējas uz praktiskiem risinājumiem,
+            nevis teorētiskiem modeļiem. Mēs strādājam ar uzņēmumiem, kuri vēlas skaidru struktūru,
+            pārskatāmu izaugsmi un ilgtspējīgus rezultātus.
+        </p>
+        <p>
+            Mūsu pieredze aptver mārketinga stratēģiju izstrādi, reklāmas plānošanu,
+            nekustamā īpašuma konsultācijas un biznesa vadības atbalstu.
+            Katru projektu analizējam individuāli, balstoties uz tirgus datiem un klienta mērķiem.
+        </p>
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section>
+    <h2>Pakalpojumi, kas rada vērtību</h2>
+    <div class="services">
+        <div class="block">
+            <h3>Reklāma un mārketings</h3>
+            <p>
+                Izstrādājam mērķtiecīgas reklāmas un mārketinga stratēģijas, kas balstītas uz datiem
+                un reālu auditorijas uzvedību. Palīdzam pozicionēt zīmolu un palielināt
+                tā atpazīstamību tirgū. Fokuss ir uz izmērāmu rezultātu sasniegšanu.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Nekustamā īpašuma konsultācijas</h3>
+            <p>
+                Sniedzam analītisku atbalstu nekustamā īpašuma iegādes, attīstības un pārvaldības jautājumos.
+                Palīdzam izvērtēt riskus, potenciālo atdevi un tirgus perspektīvas.
+                Lēmumi tiek balstīti uz ekonomiskiem aprēķiniem un tirgus situāciju.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Biznesa un administratīvais atbalsts</h3>
+            <p>
+                Konsultējam uzņēmumus biznesa vadības, struktūras un iekšējo procesu optimizācijas jautājumos.
+                Nodrošinām administratīvo atbalstu ikdienas darbībām.
+                Mērķis ir efektīvāka vadība un resursu izmantošana.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section>
+    <h2>Kāpēc klienti izvēlas mūs</h2>
+    <div class="advantages">
+        <div class="block">
+            <h3>Praktiska pieredze</h3>
+            <p>
+                Mēs piedāvājam risinājumus, kas pārbaudīti reālā biznesa vidē,
+                nevis tikai teorētiskas rekomendācijas.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Individuāla pieeja</h3>
+            <p>
+                Katrs klients un projekts tiek analizēts atsevišķi,
+                ņemot vērā nozares specifiku un uzņēmuma mērķus.
+            </p>
+        </div>
+        <div class="block">
+            <h3>Ilgtermiņa domāšana</h3>
+            <p>
+                Mēs koncentrējamies uz stabilu un ilgtspējīgu attīstību,
+                nevis īstermiņa rezultātiem.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section>
+    <h2>Mūsu darba process</h2>
+    <div class="process">
+        <div class="block">
+            <h3>1. Analīze</h3>
+            <p>
+                Izvērtējam esošo situāciju, mērķus un tirgus vidi,
+                identificējot galvenos izaicinājumus.
+            </p>
+        </div>
+        <div class="block">
+            <h3>2. Stratēģija</h3>
+            <p>
+                Izstrādājam skaidru rīcības plānu ar konkrētiem soļiem
+                un sasniedzamiem mērķiem.
+            </p>
+        </div>
+        <div class="block">
+            <h3>3. Realizācija un uzraudzība</h3>
+            <p>
+                Atbalstām ieviešanas procesu un sekojam līdzi rezultātiem,
+                pielāgojot risinājumus pēc nepieciešamības.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT FULL -->
+<section class="contact-full">
+    <h2>Sazinieties ar mums</h2>
+    <p>
+        Ja meklējat uzticamu partneri biznesa attīstībai, mārketingam vai konsultācijām,
+        aicinām sazināties ar mums. Mēs esam gatavi apspriest jūsu mērķus
+        un piedāvāt profesionālu skatījumu uz iespējamiem risinājumiem.
+    </p>
+    <div class="details">
+        <p>E-pasts: support@luanzko.pro</p>
+        <p>Adrese: 39 - 54 Viestura prospekts, Rīga, LV-1005</p>
+    </div>
+</section>
+
+<!-- 7. FORM -->
+<section>
+    <div class="form-box">
+        <h3>Nosūtiet mums ziņu</h3>
+        <p>
+            Aizpildiet formu, un mēs sazināsimies ar jums tuvākajā laikā,
+            lai pārrunātu jūsu vajadzības.
+        </p>
+        <form>
+            <input type="text" placeholder="Jūsu vārds">
+            <input type="email" placeholder="Jūsu e-pasts">
+            <textarea rows="4" placeholder="Jūsu ziņa"></textarea>
+            <button type="submit">Nosūtīt</button>
+        </form>
+    </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2026 LUANZ & KO SIA. Visas tiesības aizsargātas.
+</footer>
+
+</body>
+</html>
